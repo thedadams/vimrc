@@ -46,6 +46,7 @@ let NERDTreeIgnore=['\.git$', '.DS_Store']
 let g:CCSpellCheckEnable=1
 let g:CCSpellCheckMatchGroupName='SpellBad'
 let g:pymode_python = 'python3'
+let g:CodespellShortWord = 4
 
 " Keybindings
 map <C-n> :NERDTreeToggle<CR>
