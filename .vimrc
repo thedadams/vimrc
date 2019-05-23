@@ -8,6 +8,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'nsf/gocode'
 Plug 'vim-jp/vim-go-extra'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'jdkanani/vim-material-theme'
 Plug 'ryanoasis/vim-devicons'
 Plug 'thedadams/vim-codespell'
 Plug 'Vimjas/vim-python-pep8-indent'
@@ -31,7 +32,7 @@ set number
 set laststatus=2
 set backspace=2
 set background=dark
-colorscheme PaperColor
+colorscheme material-theme
 set encoding=UTF-8
 set macligatures
 set guifont=FuraCode\ Nerd\ Font\ Mono:h12
@@ -67,22 +68,22 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
-call NERDTreeHighlightFile('go', 'cyan', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('py', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('tex', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('go', 'cyan', 'none', '#ffa500', 'NONE')
+call NERDTreeHighlightFile('py', 'cyan', 'none', 'cyan', 'NONE')
+call NERDTreeHighlightFile('tex', 'green', 'none', 'green', 'NONE')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', 'NONE')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', 'NONE')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', 'NONE')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', 'NONE')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', 'NONE')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', 'NONE')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', 'NONE')
+call NERDTreeHighlightFile('js', 'Red', 'none', 'red', 'NONE')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', 'NONE')
 
-call NERDTreeHighlightFile('pdf', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('docx', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('xlsx', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('pptx', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('pdf', 'red', 'none', 'red', 'NONE')
+call NERDTreeHighlightFile('docx', 'red', 'none', 'red', 'NONE')
+call NERDTreeHighlightFile('xlsx', 'red', 'none', 'red', 'NONE')
+call NERDTreeHighlightFile('pptx', 'red', 'none', 'red', 'NONE')
 
 
