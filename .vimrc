@@ -40,13 +40,23 @@ hi SpellBad gui=undercurl guisp=red
 
 
 let NERDTreeShowHidden=1
+let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeIgnore=['\.git$', '.DS_Store']
 let g:CCSpellCheckEnable=1
 let g:CCSpellCheckMatchGroupName='SpellBad'
-let NERDTreeAutoDeleteBuffer = 1
+let g:pymode_python = 'python3'
 
 " Keybindings
 map <C-n> :NERDTreeToggle<CR>
+
+" Autoclose brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 " Commands
 :autocmd BufWritePre * :Codespell
