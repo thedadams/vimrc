@@ -5,8 +5,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin', {'on': 'NERDTreeToggle'}
 Plug 'jistr/vim-nerdtree-tabs', {'on': 'NERDTreeToggle'}
 Plug 'lervag/vimtex', {'for': 'tex'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'nsf/gocode'
-Plug 'vim-jp/vim-go-extra'
+Plug 'nsf/gocode', {'for': 'go'}
+Plug 'vim-jp/vim-go-extra', {'for': 'go'}
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jdkanani/vim-material-theme'
 Plug 'ryanoasis/vim-devicons'
@@ -18,6 +18,8 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
 Plug 'qpkorr/vim-bufkill'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 set autoindent
@@ -29,13 +31,14 @@ set nowritebackup
 set noswapfile
 set showmode
 set number
+set backspace=indent,eol,start
 set laststatus=2
 set backspace=2
 set background=dark
 colorscheme material-theme
 set encoding=UTF-8
-set macligatures
-set guifont=FuraCode\ Nerd\ Font\ Mono:h12
+" set macligatures
+" set guifont=FuraCode\ Nerd\ Font\ Mono:h12
 hi clear SpellBad
 hi SpellBad gui=undercurl guisp=red
 
@@ -47,6 +50,11 @@ let g:CCSpellCheckEnable=1
 let g:CCSpellCheckMatchGroupName='SpellBad'
 let g:pymode_python = 'python3'
 let g:CodespellShortWord = 4
+let g:go_fmt_fail_silently = 0
+let g:go_metalinter_autosave = 1
+let g:go_fmt_autosave = 1
+let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
 
 " Keybindings
 map <C-n> :NERDTreeToggle<CR>
