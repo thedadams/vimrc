@@ -8,7 +8,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'nsf/gocode', {'for': 'go'}
 Plug 'vim-jp/vim-go-extra', {'for': 'go'}
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'jdkanani/vim-material-theme'
+Plug 'hzchirs/vim-material'
 Plug 'ryanoasis/vim-devicons'
 Plug 'thedadams/vim-codespell'
 Plug 'Vimjas/vim-python-pep8-indent'
@@ -20,6 +20,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'qpkorr/vim-bufkill'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 set autoindent
@@ -35,10 +36,10 @@ set backspace=indent,eol,start
 set laststatus=2
 set backspace=2
 set background=dark
-colorscheme material-theme
+colorscheme vim-material
 set encoding=UTF-8
 " set macligatures
-" set guifont=FuraCode\ Nerd\ Font\ Mono:h12
+set guifont=FuraCode\ Nerd\ Font\ Mono:h12
 hi clear SpellBad
 hi SpellBad gui=undercurl guisp=red
 
