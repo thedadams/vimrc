@@ -14,7 +14,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'nsf/gocode', {'for': 'go'}
 Plug 'vim-jp/vim-go-extra', {'for': 'go'}
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'hzchirs/vim-material'
+Plug 'kaicataldo/material.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'thedadams/vim-codespell'
 Plug 'Vimjas/vim-python-pep8-indent'
@@ -42,13 +43,16 @@ set backspace=indent,eol,start
 set laststatus=2
 set backspace=2
 set background=dark
-colorscheme vim-material
+colorscheme material
 set encoding=UTF-8
 " set macligatures
-set guifont=FuraCode\ Nerd\ Font\ Mono:h12
+"set guifont=FuraCode\ Nerd\ Font\ Mono:h12
 hi clear SpellBad
 hi SpellBad gui=undercurl guisp=red
 
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 let NERDTreeShowHidden=1
 let NERDTreeAutoDeleteBuffer = 1
