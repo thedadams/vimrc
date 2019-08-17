@@ -32,6 +32,7 @@ call plug#end()
 
 set autoindent
 set smarttab
+set shiftwidth=4
 set tabstop=4
 set expandtab
 set nobackup
