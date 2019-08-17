@@ -40,6 +40,8 @@ set nowritebackup
 set noswapfile
 set showmode
 set number
+set wrap
+set linebreak
 set backspace=indent,eol,start
 set laststatus=2
 set backspace=2
@@ -61,6 +63,8 @@ let NERDTreeIgnore=['\.git$', '.DS_Store']
 let g:CCSpellCheckEnable=1
 let g:CCSpellCheckMatchGroupName='SpellBad'
 let g:pymode_python = 'python3'
+let g:pymode_options = 0
+let g:pymode_options_max_line_length = 120
 let g:CodespellShortWord = 4
 let g:go_fmt_fail_silently = 0
 let g:go_metalinter_autosave = 1
