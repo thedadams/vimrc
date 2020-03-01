@@ -28,6 +28,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'wakatime/vim-wakatime'
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 set autoindent
