@@ -3,3 +3,4 @@ autoload/
 .DS_Store
 .netrwhist
 plug.vim
+autoload
