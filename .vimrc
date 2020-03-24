@@ -39,6 +39,7 @@ else
   Plug 'sjl/vitality.vim'
   Plug 'junegunn/vim-slash'
   Plug 'tpope/vim-commentary'
+  Plug 'skielbasa/vim-material-monokai'
   call plug#end()
 
   set autoindent
@@ -58,7 +59,9 @@ else
   set backspace=2
   set background=dark
   syntax on
-  colorscheme onedark
+  set termguicolors
+  colorscheme material-monokai
+  let g:materialmonokai_italic=1
   set encoding=UTF-8
   " set macligatures
   "set guifont=FuraCode\ Nerd\ Font\ Mono:h12
