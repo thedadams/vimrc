@@ -4,6 +4,7 @@ if exists('g:vscode')
   omap gc  <Plug>VSCodeCommentary
   nmap gcc <Plug>VSCodeCommentaryLine
   nnoremap K A<CR><Esc>
+  nnoremap <Space> i_<Esc>r
 else
   if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -99,6 +100,7 @@ else
   inoremap { {}<left>
   inoremap {<CR> {<CR>}<ESC>O
   inoremap {;<CR> {<CR>};<ESC>O
+  nnoremap <Space> i_<Esc>r
 
   " Commands
   :autocmd BufWritePre * :Codespell
