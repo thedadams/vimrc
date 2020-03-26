@@ -5,6 +5,7 @@ if exists('g:vscode')
   nmap gcc <Plug>VSCodeCommentaryLine
   nnoremap K A<CR><Esc>
   nnoremap <Space> i_<Esc>r
+  nnoremap <Esc> :noh<Cr><Esc>
 else
   if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -91,6 +92,7 @@ else
   " Keybindings
   map <C-n> :NERDTreeToggle<CR>
   nnoremap K A<CR><Esc>
+  nnoremap <Esc> :noh<Cr><Esc>
 
   " Autoclose brackets
   inoremap " ""<left>
