@@ -106,6 +106,7 @@ else
 
   " Commands
   :autocmd BufWritePre * :Codespell
+  autocmd VimLeave * let &t_me="\<Esc>]50;CursorShape=1\x7"
 
   " NERDTress File highlighting
   function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
