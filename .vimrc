@@ -43,6 +43,7 @@ else
   Plug 'tpope/vim-commentary'
   Plug 'skielbasa/vim-material-monokai'
   Plug 'sheerun/vim-polyglot'
+  Plug 'bkad/CamelCaseMotion'
   call plug#end()
 
   set autoindent
@@ -90,6 +91,7 @@ else
   let g:go_fmt_autosave = 1
   let g:go_fmt_command = "goimports"
   let g:go_autodetect_gopath = 1
+  let g:camelcasemotion_key = '<leader>'
 
   " Keybindings
   map <C-n> :NERDTreeToggle<CR>
