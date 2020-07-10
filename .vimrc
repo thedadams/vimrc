@@ -42,6 +42,7 @@ else
   Plug 'junegunn/vim-slash'
   Plug 'tpope/vim-commentary'
   Plug 'skielbasa/vim-material-monokai'
+  Plug 'sheerun/vim-polyglot'
   call plug#end()
 
   set autoindent
@@ -62,7 +63,7 @@ else
   set background=dark
   syntax on
   set termguicolors
-  colorscheme material-monokai
+  colorscheme onedark
   let g:materialmonokai_italic=1
   set encoding=UTF-8
   " set macligatures
