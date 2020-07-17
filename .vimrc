@@ -66,6 +66,7 @@ else
   set termguicolors
   colorscheme onedark
   let g:materialmonokai_italic=1
+  let g:vitality_fix_focus=0
   set encoding=UTF-8
   " set macligatures
   "set guifont=FuraCode\ Nerd\ Font\ Mono:h12
