@@ -43,6 +43,8 @@ else
   Plug 'tpope/vim-commentary'
   Plug 'skielbasa/vim-material-monokai'
   Plug 'sheerun/vim-polyglot'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'machakann/vim-sandwich'
   Plug 'bkad/CamelCaseMotion'
   call plug#end()
 
@@ -63,13 +65,12 @@ else
   set backspace=2
   set background=dark
   syntax on
-  set termguicolors
   colorscheme onedark
   let g:materialmonokai_italic=1
   let g:vitality_fix_focus=0
   set encoding=UTF-8
-  " set macligatures
-  "set guifont=FuraCode\ Nerd\ Font\ Mono:h12
+  "set macligatures
+  set guifont=FuraCode\ Nerd\ Font\ Mono:h12
   hi clear SpellBad
   hi SpellBad gui=undercurl guisp=red
 
@@ -93,6 +94,9 @@ else
   let g:go_fmt_command = "goimports"
   let g:go_autodetect_gopath = 1
   let g:camelcasemotion_key = '<leader>'
+  let g:webdevicons_enable_nerdtree = 1
+  let g:webdevicons_conceal_nerdtree_brackets = 1
+  let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
 
   " Keybindings
   map <C-n> :NERDTreeToggle<CR>
