@@ -70,7 +70,6 @@ else
   let g:vitality_fix_focus=0
   set encoding=UTF-8
   "set macligatures
-  set guifont=FuraCode\ Nerd\ Font\ Mono:h12
   hi clear SpellBad
   hi SpellBad gui=undercurl guisp=red
 
@@ -112,9 +111,13 @@ else
   inoremap {<CR> {<CR>}<ESC>O
   inoremap {;<CR> {<CR>};<ESC>O
   nnoremap <Space> i_<Esc>r
+  map <Esc>OA <up>
+  map <Esc>OB <down>
+  map <Esc>OC <right>
+  map <Esc>OD <left>
 
   " Commands
-  :autocmd BufWritePre * :Codespell
+  autocmd BufWritePre * :Codespell
   autocmd VimLeave * let &t_me="\<Esc>]50;CursorShape=1\x7"
 
   " NERDTress File highlighting
