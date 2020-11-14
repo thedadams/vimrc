@@ -118,7 +118,9 @@ else
 
   " Commands
   autocmd BufWritePre * :Codespell
-  autocmd VimLeave * let &t_me="\<Esc>]50;CursorShape=1\x7"
+  autocmd VimLeave * let &t_me="\033[5 q"
+  let &t_SI="\033[5 q" " start insert mode
+  let &t_EI="\033[1 q" " end insert mode
 
   " NERDTress File highlighting
   function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
